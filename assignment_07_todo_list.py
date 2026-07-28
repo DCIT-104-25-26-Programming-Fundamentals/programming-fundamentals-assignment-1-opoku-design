@@ -79,3 +79,7 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def add_task(tasks):
+    task = input("Enter task: ")
+    tasks.append(task)
+    print(f'Task added: "{task}"')
