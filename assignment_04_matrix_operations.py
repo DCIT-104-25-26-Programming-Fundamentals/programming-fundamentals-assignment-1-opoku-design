@@ -60,3 +60,17 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def read_matrix(rows, cols):
+    matrix = []
+
+    for i in range(rows):
+        while True:
+            row = list(map(int, input(f"Enter row {i + 1}: ").split()))
+
+            if len(row) == cols:
+                matrix.append(row)
+                break
+            else:
+                print(f"Please enter exactly {cols} numbers.")
+
+    return matrix
