@@ -78,3 +78,12 @@ def print_tables(n):
             # Part B
             n = int(input("\nEnter a number N to print tables from 1 to N: "))
             print_tables(n)
+  n = int(input("\nEnter the value of N: "))
+
+    if n <= 0:
+        print("Error: Please enter a positive integer.")
+        return
+
+    print_tables(n)
+
+main()
