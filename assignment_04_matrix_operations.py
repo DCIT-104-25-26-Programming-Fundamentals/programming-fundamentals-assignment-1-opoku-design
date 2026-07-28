@@ -112,3 +112,25 @@ def add_matrices(matrix1, matrix2):
         result.append(row)
 
     return result
+
+def multiply_matrices(matrix1, matrix2):
+    rows_a = len(matrix1)
+    cols_a = len(matrix1[0])
+    cols_b = len(matrix2[0])
+
+    result = []
+
+    for i in range(rows_a):
+        row = []
+
+        for j in range(cols_b):
+            total = 0
+
+            for k in range(cols_a):
+                total += matrix1[i][k] * matrix2[k][j]
+
+            row.append(total)
+
+        result.append(row)
+
+    return result
