@@ -61,3 +61,18 @@ def get_grade(score):
         return "D"
     else:
         return "F"
+
+    # Main function
+def main():
+    score = int(input("Enter student score (0-100): "))
+
+    grade = get_grade(score)
+
+    if grade is None:
+        print("Error: Score must be between 0 and 100.")
+    else:
+        print(f"Grade: {grade}")
+
+
+# Run the program
+main()
