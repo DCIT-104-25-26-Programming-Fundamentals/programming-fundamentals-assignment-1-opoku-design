@@ -90,3 +90,24 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def add_student(students):
+    name = input("Student name: ")
+    student_id = input("Student ID: ")
+
+    num_scores = int(input("How many scores? "))
+
+    scores = []
+
+    for i in range(num_scores):
+        score = float(input(f"Enter score {i + 1}: "))
+        scores.append(score)
+
+    student = {
+        "name": name,
+        "id": student_id,
+        "scores": scores
+    }
+
+    students.append(student)
+
+    print(f'Student "{name}" added successfully.')
