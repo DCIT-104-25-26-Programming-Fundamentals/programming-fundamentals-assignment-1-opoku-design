@@ -80,3 +80,19 @@ def display_matrix(matrix):
         for value in row:
             print(f"{value:5}", end="")
         print()
+
+def transpose_matrix(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+
+    transpose = []
+
+    for j in range(cols):
+        new_row = []
+
+        for i in range(rows):
+            new_row.append(matrix[i][j])
+
+        transpose.append(new_row)
+
+    return transpose
