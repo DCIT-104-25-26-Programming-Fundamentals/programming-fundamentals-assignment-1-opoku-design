@@ -69,3 +69,12 @@ def print_tables(n):
     for number in range(1, n + 1):
         print_table(number)
         print("-" * 30)
+
+        def main():
+            # Part A
+            number = int(input("Enter a number for its multiplication table: "))
+            print_table(number)
+
+            # Part B
+            n = int(input("\nEnter a number N to print tables from 1 to N: "))
+            print_tables(n)
