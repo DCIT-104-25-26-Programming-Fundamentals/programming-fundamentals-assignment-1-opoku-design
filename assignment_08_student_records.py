@@ -147,3 +147,12 @@ def student_average(students):
             return
 
     print("Error: Student ID not found.")
+
+def display_menu():
+    print("\n================================")
+    print("     STUDENT RECORD SYSTEM MENU")
+    print("================================")
+    print("1. Add student")
+    print("2. Display all students")
+    print("3. Calculate average score")
+    print("4. Quit")
