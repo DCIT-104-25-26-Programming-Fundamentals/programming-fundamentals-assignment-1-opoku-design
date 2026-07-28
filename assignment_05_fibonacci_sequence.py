@@ -68,3 +68,16 @@ def print_fibonacci(n):
 
     print()
 
+def is_fibonacci(number):
+    if number < 0:
+        return False
+
+    first = 0
+    second = 1
+
+    while first < number:
+        next_number = first + second
+        first = second
+        second = next_number
+
+    return first == number
