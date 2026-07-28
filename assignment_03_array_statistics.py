@@ -44,3 +44,8 @@ def calculate_sum(numbers):
     for number in numbers:
         total += number
     return total
+
+def calculate_average(numbers):
+    total = calculate_sum(numbers)
+    average = total / len(numbers)
+    return average
