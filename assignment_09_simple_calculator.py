@@ -68,3 +68,49 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+# Function for addition
+def add(num1, num2):
+    return num1 + num2
+
+
+# Function for subtraction
+def subtract(num1, num2):
+    return num1 - num2
+
+
+# Function for multiplication
+def multiply(num1, num2):
+    return num1 * num2
+
+
+# Function for division
+def divide(num1, num2):
+    if num2 == 0:
+        return None
+    return round(num1 / num2, 2)
+
+
+# Function for modulus
+def modulus(num1, num2):
+    if num2 == 0:
+        return None
+    return num1 % num2
+
+
+# Function for exponentiation
+def exponent(num1, num2):
+    return num1 ** num2
+
+
+# Function to display the menu
+def display_menu():
+    print("\n============================")
+    print("     SIMPLE CALCULATOR")
+    print("============================")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Modulus")
+    print("6. Exponentiation")
+    print("7. Quit")
