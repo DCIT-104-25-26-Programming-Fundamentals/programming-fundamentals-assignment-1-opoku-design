@@ -156,3 +156,32 @@ def display_menu():
     print("2. Display all students")
     print("3. Calculate average score")
     print("4. Quit")
+
+# Main function
+def main():
+    students = []
+
+    while True:
+        display_menu()
+
+        choice = input("Enter your choice (1-4): ")
+
+        if choice == "1":
+            add_student(students)
+
+        elif choice == "2":
+            display_students(students)
+
+        elif choice == "3":
+            student_average(students)
+
+        elif choice == "4":
+            print("Goodbye!")
+            break
+
+        else:
+            print("Error: Invalid choice. Please enter a number between 1 and 4.")
+
+
+# Run the program
+main()
