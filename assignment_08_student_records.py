@@ -111,3 +111,12 @@ def add_student(students):
     students.append(student)
 
     print(f'Student "{name}" added successfully.')
+
+def calculate_average(scores):
+    total = 0
+
+    for score in scores:
+        total += score
+
+    return round(total / len(scores), 2)
+
