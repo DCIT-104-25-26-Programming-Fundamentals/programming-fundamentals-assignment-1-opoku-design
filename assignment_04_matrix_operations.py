@@ -74,3 +74,9 @@ def read_matrix(rows, cols):
                 print(f"Please enter exactly {cols} numbers.")
 
     return matrix
+
+def display_matrix(matrix):
+    for row in matrix:
+        for value in row:
+            print(f"{value:5}", end="")
+        print()
