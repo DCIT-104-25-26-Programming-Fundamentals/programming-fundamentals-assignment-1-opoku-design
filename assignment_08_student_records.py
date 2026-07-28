@@ -120,3 +120,19 @@ def calculate_average(scores):
 
     return round(total / len(scores), 2)
 
+def display_students(students):
+    if len(students) == 0:
+        print("No student records found.")
+        return
+
+    print("\n" + "-" * 70)
+    print(f'{"Name":20} {"ID":15} {"Scores":20} {"Average"}')
+    print("-" * 70)
+
+    for student in students:
+        scores = ", ".join(str(score) for score in student["scores"])
+        average = calculate_average(student["scores"])
+
+        print(f'{student["name"]:20} {student["id"]:15} {scores:20} {average:.2f}')
+
+    print("-" * 70)
