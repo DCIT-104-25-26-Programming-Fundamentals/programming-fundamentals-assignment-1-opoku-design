@@ -45,3 +45,7 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def get_grade(score):
+    # Validate the score
+    if score < 0 or score > 100:
+        return None
