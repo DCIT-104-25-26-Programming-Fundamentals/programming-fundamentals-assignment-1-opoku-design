@@ -91,3 +91,19 @@ def view_tasks(tasks):
         print("\nYour Tasks:")
         for i in range(len(tasks)):
             print(f"{i + 1}. {tasks[i]}")
+
+def delete_task(tasks):
+    if len(tasks) == 0:
+        print("There are no tasks to delete.")
+        return
+
+    view_tasks(tasks)
+
+    task_number = int(input("Enter task number to delete: "))
+
+    if task_number >= 1 and task_number <= len(tasks):
+        removed_task = tasks.pop(task_number - 1)
+        print(f'Task "{removed_task}" has been removed.')
+    else:
+        print("Error: Invalid task number.")
+
